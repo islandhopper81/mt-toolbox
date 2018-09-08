@@ -1,0 +1,142 @@
+MTToolbox version 4.1.2
+
+MTToolbox is a set of binaries and libraries for working sequence data that has
+been tagged with molecule tags.  Molecule tags are random k-mers that are
+attached to individual molecule before PCR and sequencing.  Molecule tags are
+useful in reducing PCR bias and seqeuncing error.
+
+After individual DNA molecules are tagged with random k-mers they are PCRed and
+sequenced.  By categorizing each of the sequenced reads by their molecule tags
+we can correct sequencing errors and reduce PCR bias.  We reduce PCR bias
+because if a molecule is preferentially PCRed we can normallize that effect by
+colapsing the set of reads with matching molecule tags into one consensus
+sequence.  When categorized reads are collapsed into a consensus sequence
+errors introduced in the sequencing reaction can be reduced by choosing the most
+represented base for each position in the set of categorized reads.
+
+MTToolbox was specifically designed to work with reads from the Illumina MiSeq
+mahcine using either single-end (SE), paired-ends (PE) with overlap, or PE
+without overlap.  However, in theory it is compatable with other sequencing
+technologies and protocols.
+
+For details on installation instructions, descriptions, updates, usage
+instructions, and other important information pertaining to MT-Toolbox see:
+
+https://sites.google.com/site/moleculetagtoolbox/home
+
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build installdeps
+	./Build test
+	./Build install
+	
+For more details on installation see:
+
+https://sites.google.com/site/moleculetagtoolbox/installation
+
+
+REQUIRED DEPENDENCIES
+
+Perl
+ClustalW
+
+BioUtils::ConsensusBuilder::ConsensusBuilder
+BioUtils::FastaIO
+BioUtils::FastqIO
+BioUtils::FastqSeq
+BioUtils::QC::FastqFilter
+BioUtils::SeqSeq::Diagnostics
+Carp
+Chart::Gnuplot
+Class::Std::Utils
+Data::Dumper
+Exception::Class
+File::Basename
+File::Spec
+File::Temp
+Getopt::Long
+IPC::Cmd
+List::MoreUtils
+Math::BigInt
+Module::Build
+MyX::Generic # Comes with BioUtils
+Scalar::Util
+Statistics::Descriptive
+Storable
+Test::Exception
+Test::More
+Test::Pod
+Test::Pod::Coverage
+Test::Warn
+Tk
+Tk::DialogBox
+Tk::LabEntry
+Tk::NoteBook
+XML::Simple
+version
+
+
+OPTIONAL DEPENDENCIES
+
+gnuplot -- needed for building output graphs
+FLASH -- needed for overlapping PE reads
+X Window System -- needed for using the GUI
+
+
+LICENCE AND COPYRIGHT
+
+Copyright (c) 2013, Scott Yourstone
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met: 
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer. 
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution. 
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those
+of the authors and should not be interpreted as representing official policies, 
+either expressed or implied, of the FreeBSD Project.
+
+
+DISCLAIMER OF WARRANTY
+
+BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
+ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH
+YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL
+NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENCE, BE
+LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL,
+OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE
+THE SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.

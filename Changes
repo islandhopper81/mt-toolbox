@@ -1,0 +1,57 @@
+Revision history for MTToolbox
+
+4.1.2	Wed Oct 8, 2014
+	- All changes in 4.1.2 release
+
+4.1.1	Beta
+	- Added button for loading a previously used config file
+	- Fixed issue when using same fwd and rev primers
+	- Changed and organized output directory structure
+
+4.1.0	Mon June 2, 2014
+	- Compatibility with UPARSE for MT-MT-Toolbox
+	- Muscle option for building MSA
+	- Algorithm for non-square alignment matrix
+	- Added depth and barcodelabel features to ConSeqs header
+	- QC can be done differently on individual samples
+	- Small bug fixes
+
+4.0.6	Tues Jan 28 2014
+    - Check environment for required excutables
+	- Added column of sample name to summary file
+    - Minor bug fixes
+
+4.0.5	Thurs Sept 12 2013
+	- Added automated download and install for dependencies with Build.PL
+    - Changed namespace to work better with Module::Build defaults
+	- Made barcode an optional sample parameter
+	- Fixed crash when using just one sample
+	- Added options for c-score filtering to identify ConSeqs that are tagging
+	  multiple templates.
+
+4.0.4   Mon Jul 22 2013
+	- Added a GUI
+	- Made bin_sample_exec parameter optional
+	- seperate standard edition from extended
+	- changed names of some output files
+	- changed "spacer" lingo to "linker"
+	- added remove tmp file option
+	- Changed to BSD license
+	- defined defaults in MTParams
+	- bug fixes
+	- other improvements
+
+4.0.3	Thur Jan 10 2013
+	- Added a reverse spacer to matching regex and corresponding objects
+	- Whole file paths take out of output files summary tables
+
+4.0.2	Tues Dec 18 2012
+	- using FastqIO instead of FastqParser.
+	- removed primer sequenes from fastX outputs.
+
+4.0.1	Tues Dec 18 2012
+	Tagging a release so I can add some updates.
+
+0.0.1  Fri Sep 21 10:56:38 2012
+       Initial release.
+
