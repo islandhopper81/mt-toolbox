@@ -42,6 +42,8 @@ use Exception::Class (
     },
 );
 
+MTToolbox::MyX::MTParams->Trace(1);
+
 1;
 __END__
 

@@ -20,7 +20,7 @@ use BioUtils::FastqIO 1.0.7;
 use BioUtils::FastaIO 1.0.7;
 use BioUtils::SeqSet::Diagnostics 1.0.7;
 use BioUtils::QC::FastqFilter 1.0.7;
-use MyX::Generic 1.0.7;
+use MyX::Generic 0.0.3;
 use MTToolbox::MTDepthDist 4.1.2;
 use MTToolbox::RunSummary 4.1.2;
 use MTToolbox::MTParams 4.1.2;

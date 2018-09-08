@@ -8,7 +8,7 @@ use Class::Std::Utils;
 use List::MoreUtils qw(any);
 use Readonly;
 use Carp qw(croak);
-use MyX::Generic 1.0.0;
+use MyX::Generic 0.0.3;
 use version; our $VERSION = qv('4.1.2');
 
 {

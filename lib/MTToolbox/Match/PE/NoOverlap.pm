@@ -9,7 +9,7 @@ use List::MoreUtils qw(any);
 use Readonly;
 use Carp qw(carp croak);
 use BioUtils::FastqSeq 1.0.0;
-use MyX::Generic 1.0.0;
+use MyX::Generic 0.0.3;
 use version; our $VERSION = qv('4.1.2');
 
 use MTToolbox::Match::PE;

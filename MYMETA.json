@@ -1,0 +1,162 @@
+{
+   "abstract" : "A module for running many types of molecule tagged sequence analysis",
+   "author" : [
+      "Scott Yourstone <scott.yourstone81@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.421",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "MTToolbox",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Carp" : "0",
+            "Chart::Gnuplot" : "0",
+            "Chart::Graph::Gnuplot" : "0",
+            "Class::Std::Utils" : "0",
+            "Data::Dumper" : "0",
+            "Exception::Class" : "0",
+            "File::Basename" : "0",
+            "File::Spec" : "0",
+            "File::Temp" : "0",
+            "Getopt::Long" : "0",
+            "IPC::Cmd" : "0",
+            "List::MoreUtils" : "0",
+            "Math::BigInt" : "0",
+            "Module::Build" : "0",
+            "Pod::Coverage" : "0",
+            "Scalar::Util" : "0",
+            "Statistics::Descriptive" : "0",
+            "Test::Exception" : "0",
+            "Test::More" : "0",
+            "Test::Pod" : "0",
+            "Test::Pod::Coverage" : "0",
+            "Test::Warn" : "0",
+            "Tk" : "0",
+            "Tk::DialogBox" : "0",
+            "Tk::LabEntry" : "0",
+            "Tk::NoteBook" : "0",
+            "XML::Parser" : "0",
+            "XML::Simple" : "0",
+            "version" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Test::More" : "0",
+            "version" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "MTToolbox" : {
+         "file" : "lib/MTToolbox.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MTDepthDist" : {
+         "file" : "lib/MTToolbox/MTDepthDist.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MTEnv" : {
+         "file" : "lib/MTToolbox/MTEnv.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MTParams" : {
+         "file" : "lib/MTToolbox/MTParams.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Match" : {
+         "file" : "lib/MTToolbox/Match.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Match::PE" : {
+         "file" : "lib/MTToolbox/Match/PE.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Match::PE::NoOverlap" : {
+         "file" : "lib/MTToolbox/Match/PE/NoOverlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Match::PE::Overlap" : {
+         "file" : "lib/MTToolbox/Match/PE/Overlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Match::SE" : {
+         "file" : "lib/MTToolbox/Match/SE.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Mismatch" : {
+         "file" : "lib/MTToolbox/Mismatch.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MoleculeTagCategory" : {
+         "file" : "lib/MTToolbox/MoleculeTagCategory.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MoleculeTagCategory::PE::NoOverlap" : {
+         "file" : "lib/MTToolbox/MoleculeTagCategory/PE/NoOverlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MoleculeTagCategory::PE::Overlap" : {
+         "file" : "lib/MTToolbox/MoleculeTagCategory/PE/Overlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MoleculeTagCategory::SE" : {
+         "file" : "lib/MTToolbox/MoleculeTagCategory/SE.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::MyX::MTParams" : {
+         "file" : "lib/MTToolbox/MyX/MTParams.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::RunSummary" : {
+         "file" : "lib/MTToolbox/RunSummary.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Sample" : {
+         "file" : "lib/MTToolbox/Sample.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Sample::PE::NoOverlap" : {
+         "file" : "lib/MTToolbox/Sample/PE/NoOverlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Sample::PE::Overlap" : {
+         "file" : "lib/MTToolbox/Sample/PE/Overlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::Sample::SE" : {
+         "file" : "lib/MTToolbox/Sample/SE.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::SampleSummary" : {
+         "file" : "lib/MTToolbox/SampleSummary.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::SampleSummary::PE::NoOverlap" : {
+         "file" : "lib/MTToolbox/SampleSummary/PE/NoOverlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::SampleSummary::PE::Overlap" : {
+         "file" : "lib/MTToolbox/SampleSummary/PE/Overlap.pm",
+         "version" : "v4.1.2"
+      },
+      "MTToolbox::SampleSummary::SE" : {
+         "file" : "lib/MTToolbox/SampleSummary/SE.pm",
+         "version" : "v4.1.2"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "v4.1.2"
+}

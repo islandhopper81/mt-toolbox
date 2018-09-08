@@ -9,7 +9,7 @@ use Readonly;
 use Carp qw(carp croak);
 use IPC::Cmd qw( can_run );
 use Exception::Class;
-use MyX::Generic 1.0.7;
+use MyX::Generic 0.0.3;
 use MTToolbox::MyX::MTParams 4.1.2;
 use version; our $VERSION = qv('4.1.2');
 
